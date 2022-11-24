@@ -1,0 +1,19 @@
+<Studens>
+  <name>nandini</name>
+  <city>bangalore</city>
+  <age>24</age>
+  <Intersts>cooking</Intersts>
+  <Intersts>reading</Intersts>
+  <food>veg</food>
+  <food>eggitarian</food>
+</Studens>
+<Studens>
+  <name>adithya</name>
+  <city>bangalore</city>
+  <age>24</age>
+  <Intersts>cooking</Intersts>
+  <Intersts>reading</Intersts>
+  <Intersts>travel</Intersts>
+  <food>non-veg</food>
+  <food>eggitarian</food>
+</Studens>
