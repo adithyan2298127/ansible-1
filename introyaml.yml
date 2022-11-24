@@ -1,5 +1,5 @@
 <key>: <value>
-
+wq
 Fruits:
   - apple
       colour: red
@@ -46,6 +46,6 @@ Studens:
       - eggitarian  
     passport: no
     expiry: yyyy-mm-dd
-    
+
 
 
