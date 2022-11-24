@@ -1,0 +1,28 @@
+# list hosts as per inventory file
+ansible all --list-hosts
+ansible webservers --list-hosts
+ansible dbservers --list-hosts
+ansible usaservers --list-hosts
+ansible prodservers --list-hosts
+ansible serversgroup --list-hosts
+ansible --help
+nsible ungrouped --list-hosts
+
+ansible --version
+
+#connect to remote system
+ping -c 3 10.0.1.74
+
+ssh student@10.0.1.74
+
+#on the remote system in stall openssh and open firewall port if required
+apt update
+apt install openssh-serversgroup
+systemctl status sshd
+ufw status #make sure 22/tcp opened
+
+# make sure student is able to login via ssh keybased authentication
+ssh-copy-id student@10.0.1.x/y
+
+ansible myservers -m ping 
+
