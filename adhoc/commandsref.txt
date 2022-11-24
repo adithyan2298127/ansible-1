@@ -40,3 +40,9 @@ ansible atlanta -m shell -a uptime
 #rename your second system as ubuNN
 hostname set-hostname ubuNN
 ansible dbservers -m shell -a "hostnamectl set-hostname ubun74"
+
+keyboard settings for vscode:
+{
+  "key": "ctrl+alt+e",
+  "command": "workbench.action.terminal.runSelectedText"
+}
