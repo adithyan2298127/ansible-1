@@ -11,4 +11,8 @@ ansible-playbook fileplaybook.yml --syntax-check
 ansible-playbook -C fileplaybook.yml
 
 ansible-playbook fileplaybook.yml
+ansible-playbook fileplaybook.yml -v
 
+
+Task excercise:
+copy cal2025.txt to all systems /tmp using play book
