@@ -4,4 +4,11 @@ ansible-playbook playbook1.yml
 
 #refer ansible module syntax
 ansible-doc -l
+ansible-doc file
+
+ansible-playbook fileplaybook.yml --syntax-check
+#dry run
+ansible-playbook -C fileplaybook.yml
+
+ansible-playbook fileplaybook.yml
 
