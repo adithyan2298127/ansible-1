@@ -2,5 +2,6 @@
 ansible-playbook playbook1.yml --syntax-check
 ansible-playbook playbook1.yml 
 
-
+#refer ansible module syntax
+ansible-doc -l
 
