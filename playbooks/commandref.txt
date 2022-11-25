@@ -59,3 +59,15 @@ ansible-doc user
 
 
 ansible-playbook user.yml --syntax-check
+
+## task assigned ##
+install nginx in webserver, create default webpage with welcome message
+    0. apt update
+    1. apt install nginx
+2. systemctl status nginx
+3. systemctl start nginx  - [service] ansible-doc service
+    4. create index.html with welcome message place it in \var\www\html folder
+5. ufw allow 80/tcp - [ufw] ansible-doc ufw
+
+
+ansible-playbook nginxdeploy.yml --syntax-check
