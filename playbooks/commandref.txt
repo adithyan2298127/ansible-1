@@ -16,3 +16,32 @@ ansible-playbook fileplaybook.yml -v
 
 Task excercise:
 copy cal2025.txt to all systems /tmp using play book
+
+#get copy module refer
+ansible-doc copy
+#create required playbook with copy module with required hosts
+ansible-playbook copyfile.yml --syntax-check
+ansible-playbook -C copyfile.yml 
+ansible-playbook copyfile.yml 
+
+#find tasks for update, install vim
+ansible-doc apt
+
+- name: Task1 Run the equivalent of "apt-get update" as a separate task
+  apt:
+    update_cache: yes
+
+- name: Task 2 Install vim text editor  (state=present is optional)
+  apt:
+    name: vim
+#state: present
+
+
+ansible-playbook aptplay.yml --syntax-check
+ansible-playbook -C aptplay.yml 
+ansible-playbook aptplay.yml 
+
+#create sudoers file for user a1 and copy to /etc/sudoers.d/a1nopass
+refer copy module/example
+
+ansible-playbook multitask.yml --syntax-check
