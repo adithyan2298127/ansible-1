@@ -45,3 +45,17 @@ ansible-playbook aptplay.yml
 refer copy module/example
 
 ansible-playbook multitask.yml --syntax-check
+
+
+#create user accounts
+ansible-doc user
+
+- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+  user:
+    name: johnd
+    comment: John Doe
+    uid: 1040
+    group: admin
+
+
+ansible-playbook user.yml --syntax-check
