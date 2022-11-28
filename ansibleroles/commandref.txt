@@ -1,0 +1,24 @@
+mkdir -p /home/student/ansible/ansibleroles/roles
+cd /home/student/ansible/ansibleroles/roles
+ansible-galaxy init webapp1
+
+cd /home/student/ansible/ansibleroles/roles/tasks
+in files folder create a new index.html file for hompage
+create requires tasks as individual tasks
+in the main.yml import tasks using the following code 
+---
+# tasks file for webapp1
+- import_tasks: installapache.yml
+- import_tasks: homepage.yml
+- import_tasks: servicestop.yml
+
+cd /home/student/ansible/ansibleroles
+create deploywebapp1.yml with following code
+---
+- name: use webapp1 roles directory content install apache2
+  hosts: webservers
+  roles:
+    - webapp1
+
+
+ansible-playbook deploywebapp1.yml --syntax-check

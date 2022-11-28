@@ -1,0 +1,6 @@
+name: find all txt files in /tmp 
+shell: "find /tmp -name *.txt" 
+  register: find_output
+
+debug:
+  var: find_output
