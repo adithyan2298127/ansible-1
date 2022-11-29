@@ -1,3 +1,13 @@
+Configuration Management Day 1+N
+Mutable -->>>update/upgrade
+/ 
+Immutable - 
+Ansible preq: Controller Node - Linux OS + python
+Ansible-hosts: LinuxOS -openSSHd, sudo/root account / WinOS - winrm,powershell
+
+1. ansible.cfg(pwd), ~/.ansible.cfg, /etc/ansible/ansible.cfg
+2. inventory ini/json 
+
 # list hosts as per inventory file
 ansible all --list-hosts
 ansible webservers --list-hosts
@@ -6,7 +16,7 @@ ansible usaservers --list-hosts
 ansible prodservers --list-hosts
 ansible serversgroup --list-hosts
 ansible --help
-nsible ungrouped --list-hosts
+ansible ungrouped --list-hosts
 
 ansible --version
 

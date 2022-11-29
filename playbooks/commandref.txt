@@ -1,3 +1,5 @@
+Playbooks>plays>tasks>modules
+
 #ansible playbooks
 ansible-playbook playbook1.yml --syntax-check
 ansible-playbook playbook1.yml 
