@@ -6,6 +6,4 @@
       copy:
         src: cal2025.txt
         dest: /tmp
-        owner: student
-        group: root
-        mode: '0660'
+        
