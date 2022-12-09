@@ -4,7 +4,7 @@
   tasks:
     - name: Copy file with owner and permissions
       copy:
-        src: playbooks/cal2025.txt
+        src: cal2025.txt
         dest: /tmp
         owner: student
         group: root
